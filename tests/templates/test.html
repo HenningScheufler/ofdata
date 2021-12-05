@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown</title>
+</head>
+<body>
+<select name="form" onchange="location = this.value;">
+    {% for func_obj in func_objs %}
+        <option value="{{ url_for('functionObj', functionObj=func_obj) }}">{{ func_obj }}</option>
+    {% endfor %}
+</select>
+
+<H1>Description</H1>
+<span style="white-space: pre-line">{{ obj_desc }}</span>
+
+<H1>Usage</H1>
+<span style="white-space: pre-line">{{ obj_use }}</span> 
+</body>
+</html>

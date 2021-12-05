@@ -1,0 +1,5 @@
+{
+    "Class": "    Foam::mapNearestMethod\n\n",
+    "Description": "    Map nearest mesh-to-mesh interpolation class\n\n    Not volume conservative.\n    - cells outside other meshes bounding box do not get mapped\n      (initial filtering)\n    - all remaining cells will be mapped (with weight 1!)\n    - so take care when mapping meshes with different bounding boxes!\n\n",
+    "SourceFiles": "    mapNearestMethod.C\n\n\\*---------------------------------------------------------------------------*/\n"
+}
