@@ -23,10 +23,17 @@ provides meta data for the openfoam library
 * Documentation: https://ofdata.readthedocs.io.
 
 
-Features
---------
+How to use
+----------
 
-* TODO
+
+pip install .
+cd tests
+ofdata $WM_PROJECT_DIR # parse headers
+python test-flask
+
+
+
 
 Credits
 -------
