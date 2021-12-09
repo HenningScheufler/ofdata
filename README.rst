@@ -26,11 +26,13 @@ provides meta data for the openfoam library
 How to use
 ----------
 
-
+python -m venv env
 pip install .
 cd tests
 ofdata $WM_PROJECT_DIR # parse headers
 python test-flask
+
+open in browser http://127.0.0.1:5001/func/forces/
 
 
 
