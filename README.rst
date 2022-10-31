@@ -12,13 +12,19 @@ provides meta data for the openfoam library
 How to use
 ----------
 
-..  code-block:: bash
+.. code-block:: bash
 
+    python -m venv env # optional
     pip install -e .
     cd tests
     ofdata $WM_PROJECT_DIR # parse headers
-    python test_flask.py
-    http://127.0.0.1:5001/func/forces/ enter browser
+    python test-flask
+
+
+open in browser http://127.0.0.1:5001/func/forces/
+
+
+
 
 
 Output
