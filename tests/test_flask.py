@@ -42,7 +42,6 @@ def functionObj(functionObj):
     if "Usage" in d_cd[functionObj]:
         obj_use = d_cd[functionObj]["Usage"]
         obj_use = parse_table(obj_use)
-        print(obj_use)
         obj_use = obj_use.replace("\\verbatim","<pre><code>")
         obj_use = obj_use.replace("\\endverbatim","</code></pre>")
 
